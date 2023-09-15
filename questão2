@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+int main(){
+
+    int vetor[10], i, j;
+    printf("Digite 10 valores: \n");
+    for(int i = 0; i< 10; i++){
+        scanf("%i", &vetor[i]);
+    }
+    for(i = 0; i < 10; i++){
+     if(vetor[i]<=1){
+        printf("\nO numero %d nao e primo", vetor[i]);
+        printf(" | Vetor de posicao [%i] = %i\n", i, vetor[i]);
+    }else{
+        for(j = 2; j < vetor[i]; j++){
+            if(vetor[i]%j==0){
+                printf("\nO numero %d nao e primo", vetor[i]);
+                printf(" | Vetor de posicao [%i] = %i\n", i, vetor[i]);
+                break;
+            }
+        }
+    }
+        
+   if(j==vetor[i]){
+        printf("\nO numero %d e primo", vetor[i]);
+        printf(" | Vetor de posicao [%i] = %i\n", i, vetor[i]);
+    }
+   }
+
+    return 0;
+}
