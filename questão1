@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main()
+{
+    int vetor[100], tam = 0, n = 0;
+    
+    while(tam<100){
+      if(n%7!=0 || n%10==7){
+            vetor[tam] = n;
+            printf("Vetor de posicao [%i] = %i\n", tam, n);
+            tam++;
+        }  
+            n++;
+    
+   }
+
+    return 0;
+}
