@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main(){
+    
+    int i , j= 1, k, x, n;
+    printf("Informe um valor: ");
+    scanf("%d", &n);
+    
+    for(i = 0; i < n; i++){
+        for(x = 1; x <= n-i; x++)
+           printf(" ");
+            for(k = 0; k<=i; k++){
+                if(k==0 || i==0)
+                j=1;
+                else
+                    j=j*(i-k+1)/k;
+                    printf("%d ", j);
+                }
+                printf("\n");
+        }
+    
+    return 0;
+}
